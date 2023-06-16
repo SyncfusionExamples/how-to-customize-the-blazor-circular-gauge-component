@@ -1,0 +1,45 @@
+﻿@page "/"
+
+<SfCircularGauge ID="circular" Height="450px" Width="450px">
+    <CircularGaugeAxes>
+        <CircularGaugeAxis Background="rgba(0, 128, 128, 0.3)"
+                           Minimum="50" Maximum="250"
+                           StartAngle="0"
+                           EndAngle="360"
+                           >
+            <CircularGaugeAxisLineStyle Color="red" Width="2"></CircularGaugeAxisLineStyle>
+            <CircularGaugeAxisMajorTicks Color="red" Width="3"
+                           Height="10" Interval="20"
+                           Offset="10"
+                           >
+            </CircularGaugeAxisMajorTicks>
+            <CircularGaugeAxisMinorTicks Color="green" Width="2"
+                           Height="5" Interval="10"
+                           Offset="10"
+                           ></CircularGaugeAxisMinorTicks>
+            <CircularGaugePointers>
+                <CircularGaugePointer></CircularGaugePointer>
+            </CircularGaugePointers>
+            <CircularGaugeAxisLabelStyle AutoAngle=true
+                           Format="{value}°C"
+                           HiddenLabel="HiddenLabel.First"></CircularGaugeAxisLabelStyle>
+            <CircularGaugePointers>
+                <CircularGaugePointer></CircularGaugePointer>
+            </CircularGaugePointers>
+            <CircularGaugeRanges>
+                <CircularGaugeRange Start="210" End="250"
+                           Color="blue" Opacity="0.2" Position="PointerRangePosition.Inside"
+                           >
+                </CircularGaugeRange>
+                <CircularGaugeRange Start="70" End="90" Radius="70%">
+                </CircularGaugeRange>
+                <CircularGaugeRange Start="110" End="150" Radius="70%">
+                </CircularGaugeRange>
+            </CircularGaugeRanges>
+        </CircularGaugeAxis> 
+        <CircularGaugeAxis Background="rgba(0, 256, 64, 0.3)"
+            Minimum="-20" Maximum="60">
+        </CircularGaugeAxis>
+    </CircularGaugeAxes>
+</SfCircularGauge>
+
